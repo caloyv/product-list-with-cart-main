@@ -58,7 +58,7 @@ export default function(data) {
             cartIconLocal.querySelector(".quantity").textContent = TOTAL_ORDER[dataId];
 
             if (TOTAL_ORDER[dataId] == 0) 
-                disableCart(cartIconLocal);
+                UIUpdates.disableCart(cartIconLocal);
 
             UIUpdates.updateTotalCartUI(data, TOTAL_ORDER);
         }

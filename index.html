@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body class="">
+    <main>
+
+      <section>
+        <div class="title-bar">
+          <h1 class="rose-900">Desserts</h1>
+        </div>
+
+        <div class="items-container"></div>
+      </section>
+
+
+      <div class="your-cart-container">
+        <h2>Your Cart (<span id="total-cart">0</span>)</h2>
+        <div class="cart-empty-container contains-items">
+          <div class="empty-card-img-container">
+            <img
+              src="./assets/images/illustration-empty-cart.svg"
+              alt="cake image"
+            />
+          </div>
+          <p>Your added items will apprear here</p>
+        </div>
+      </div>
+
+      <div class="confirmation-window-container">
+        <div class="confirmation-window">
+          <div class="check-img-container">
+            <img src="assets\images\icon-order-confirmed.svg" alt="check-icon" />
+          </div>
+          <div class="header-container">
+            <h1>Order Confirmed</h1>
+            <p>We hope you enjoy your food!</p>
+          </div>
+          <div class="ordered-items-container">
+            <div class="ordered-item-list">
+              <!-- <div class="ordered-item">
+                <div class="ordered-item-details-container">
+                  <div class="ordered-item-thumbnail-container">
+                    <img src="assets\images\image-tiramisu-thumbnail.jpg" />
+                  </div>
+                  <div class="ordered-item-details">
+                    <h4 class="ordered-item-name">Classic Tiramisu</h4>
+                    <div class="ordered-item-quantity-container">
+                      <p class="ordered-item-quantity">1x</p>
+                      <p class="ordered-item-individual-price">@ $5.50</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="ordered-item-total-price">$5.50</p>
+              </div> -->
+              
+            </div>
+
+            <div class="ordered-total-container">
+              <p class="ordered-total-text">Order Total</p>
+              <p class="ordered-total-amount">$46.50</p>
+            </div>
+          </div>
+          <button class="start-new-btn">Start New Order</button>
+        </div>
+      </div>
+    </main>
+
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
